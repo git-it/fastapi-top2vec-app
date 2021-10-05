@@ -1,6 +1,8 @@
 # Top2Vec as a service 
 
-Enable exploration of a top2vec model
+Basic (docker) to enable many serving and exploration of a top2vec (https://github.com/ddangelov/Top2Vec) model
+
+Kudos and much thanks to ddangelov for creating the awesome Top2Vec library.
 
 ## Tech Stack
 
