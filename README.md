@@ -8,6 +8,15 @@ Kudos and much thanks to ddangelov for creating the awesome Top2Vec library.
 
 * Backend: FastAPI
 * Frontend: React
+* Db: postgres - not much use yet. stores user ratings of docs for future recommender
+
+## To Run 
+```
+git clone
+cd into dr
+docker compose up 
+```
+go to http://localhost:8080/app to launch webapp or http://localhost:8080/docs for APIs
 
 ## Dev setup
 
