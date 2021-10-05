@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+ user-database:
+  restart: always
+  container_name: 'rating_db'
+  image: postgres
+  ports:
+  - "5432:5432"
+  environment:
+   POSTGRES_PASSWORD: 'password'
+   POSTGRES_DB: 'ratings'
+ top2vec:
+  build: .
+  depends_on:
+  - user-database
+  restart: always
+  ports:
+  - "8080:80"
+  # tty: true
+  environment:
+   db_server: 'user-database'
+   model_path: "/app/quran_model.pkl"
+  stdin_open: true

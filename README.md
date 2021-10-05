@@ -1,26 +1,24 @@
-# FastAPI Vue App
+# Top2Vec as a service 
 
-Deploy Machine Learning models as API via FastAPI and consume the API from a frontend by Vue.
+Enable exploration of a top2vec model
 
 ## Tech Stack
 
 * Backend: FastAPI
-* Frontend: Vue
+* Frontend: React
 
+## Dev setup
 
-## Get Started
-
-1. prepare virtual environment and install dependencies
+1. clone and install python dependencies
 ```
-conda create -n fastapi_vue_app python=3.7
-conda activate fastapi_vue_app
+git clone
 pip install -r requirements.txt
 ``` 
-2. train a binary classification model [Optional]
 
+2. train Top2Vec on a corpus [ modify ]
 ```
-# optional, the saved model is already provided in the repo
-python train_model.py
+# example script 
+python create_example_model_from_The_Quran.py
 ```
 
 3. launch the model prediction API
